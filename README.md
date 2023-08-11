@@ -1,5 +1,5 @@
 # Notes on Cloud Geocomputing
-### tools and workflows
+### tools and workflows for researchers
 
 ## CONTENTS:
 1. [Microsoft Planetary Computer (MSPC)](erthward.github.io/mspc/mspc.md)
