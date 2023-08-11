@@ -1,4 +1,4 @@
-# Overview:
+i Overview:
 [MSPC](http://planetarycomputer.microsoft.com/) is a free-to-use geocomputing environment created and provided by Microsoft.
 It offers:
 1. a [Data Catalog](http://planetarycomputer.microsoft.com/docs/overview/about) with a lot of commonly used datasets ready to go (and worked examples to use as a quick-start);
@@ -10,7 +10,7 @@ The Hub is built using [JupyterHub](https://jupyter.org/hub), and provides
 environments to working in Python (CPU and GPU) and R notebooks, as well as QGIS.
 The Python environment is based on the [PanGeo stack](https://pangeo.io/)
 (including the powerful combination of core packages:
-[rioxarray](https://corteva.github.io/rioxarray/stable/),
+[xarray](https://docs.xarray.dev/en/latest/),
 [geopandas](https://corteva.github.io/rioxarray/stable/),
 and [dask](https://www.dask.org/)).
 
@@ -29,7 +29,7 @@ that index arbitrarily complex, spatiotemporal datasets
 catalogs of data...).
 The actual data files are stored as BLOBs (binary large objects) in
 cloud-optimized formats (namely, [Cloud Optimized Geotiffs (COGs)](https://www.cogeo.org/)
-in Azure's `west_europe` region (where the MSPC computing happens).
+in Azure's `westeurope` region (where the MSPC computing happens).
 This whole setup allows analyses to, with minimal code, slice and dice
 the data along space-time axes
 (e.g., "give me this dataset for these 2 years and within this lat-lon bounding box"),
@@ -49,12 +49,13 @@ Read on to start learning the ins and outs and start getting things done!
 3. Open that dataset's Example Notebook ([e.g.](https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2#Example-Notebook)).
 4. Launch the [Hub](http://planetarycomputer.microsoft.com/docs/overview/environment/).
 5. Start copying, pasting, and playing with code from the Example Notebook!
+6. Check out [this excellent, 1-hour tutorial](https://www.youtube.com/watch?v=v3e2ODCK9Co&t=25195s) by [Tom Augspurger](http://tomaugspurger.net/about/), MSPC developer. 
 
 
 # Details:
-- [the Hub](erthward.github.io/mspc/hub.md)
-- [STAC](erthward.github.io/mspc/hub.md)
-- [dask](erthward.github.io/mspc/dask.md)
-- [using your own data](erthward.github.io/mspc/own_data.md]
+- [the Hub](mspc/hub.md)
+- [STAC](mspc/hub.md)
+- [dask](mspc/dask.md)
+- [using your own data](mspc/own_data.md]
 
 
