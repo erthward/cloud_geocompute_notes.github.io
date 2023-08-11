@@ -1,4 +1,4 @@
-i Overview:
+# Overview:
 [MSPC](http://planetarycomputer.microsoft.com/) is a free-to-use geocomputing environment created and provided by Microsoft.
 It offers:
 1. a [Data Catalog](http://planetarycomputer.microsoft.com/docs/overview/about) with a lot of commonly used datasets ready to go (and worked examples to use as a quick-start);
@@ -53,9 +53,9 @@ Read on to start learning the ins and outs and start getting things done!
 
 
 # Details:
-- [the Hub](mspc/hub.md)
-- [STAC](mspc/hub.md)
-- [dask](mspc/dask.md)
-- [using your own data](mspc/own_data.md]
+- [the Hub](hub.md)
+- [STAC](hub.md)
+- [dask](dask.md)
+- [using data not in the Data Catalog](byo_data.md)
 
 
