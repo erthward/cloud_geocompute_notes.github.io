@@ -53,9 +53,10 @@ Read on to start learning the ins and outs and start getting things done!
 
 
 # Details:
-- [the Hub](hub.md)
-- [STAC](hub.md)
-- [dask](dask.md)
-- [using data not in the Data Catalog](byo_data.md)
+- [**the Hub**](hub.md)
+- [**STAC**](stac.md)
+- [**dask**](dask.md)
+- [**kbatch**](kbatch.md)
+- [**using data not in the Data Catalog**](byo_data.md)
 
 
