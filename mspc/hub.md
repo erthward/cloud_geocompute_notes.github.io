@@ -12,7 +12,7 @@ compute tools and a cloud-based compute workflow and environment for
 big-data geocomputing.
 This approach to geocomputing depends on a set of [core packages](https://pangeo.io/packages.html#packages)
 that are also central to MSPC workflows
-(mostly; I haven't found myself needing to use Iris at all, though...),
+(mostly, though I haven't found myself needing to use Iris in my own work so far),
 and thus are very worth taking the time to learn well.
 (**Note**: Their documentation is excellent and, unlike most cloud computing documentation, it is built with scientists in mind rather than private industry!
 I recommend starting with their 
@@ -22,7 +22,8 @@ in which each user has a private, virtual environment (analogous to a user space
 The compute environment is accessed through the browser, so you just log in there,
 and you can up/download smaller objects/files directly to the home directory
 (though you should defer to using [Git](https://git-scm.com/)/[GitHub](https://github.com/) as much as possible).
-Data of any 'meaningful' size should not be stored in [Azure](https://azure.microsoft.com/en-us) cloud storage instead. (**Note**: they *must* be stored in the `westeurope` Azure region, so that are colocated with the MPSC servers.)
+Data of any 'meaningful' size should not be stored in [Azure](https://azure.microsoft.com/en-us) cloud storage instead. (**Note**: for MSPC work, they *must* be stored in the `westeurope` Azure region, so that are colocated with the MPSC servers.)
+Data should be stored in cloud-optimized formats (e.g., [Cloud Optimized Geotiffs (COGs)](https://www.cogeo.org/)) and then indexed using a [SpatioTemporal Asset Catalogs (STAC)](https://stacspec.org/en) so that their contents can be easily searched (along spatiotemporal dimensions as well as on the basis of other metadata, e.g., cloud fractions) and then streamed into analyses. (For more on STAC, see the details on the [**STAC page**](stac.md).)
 
 (FYI: Cloud storage is effectively a key-value system,
 where keys are strings and values are bytes of data.
@@ -76,7 +77,7 @@ If you want to work with code that is version-controlled on GitHub (highly recom
 # Next steps:
 
 
-## Dask:
+## [**Dask**](dask.md):
 [Dask](https://www.dask.org) is an important part of Pangeo Cloud, and thus of the MSPC Hub.
 It is used to parallelize large calculations: i.e., to break them into small pieces,
 run them all simultaneously on a 'cluster' of networked comuter nodes, or 'workers',
@@ -93,7 +94,7 @@ algebra on raster tiles as a way of running the same computation on the very lar
 In that case, please see the [**dask**](dask.md) page for more detail!
 
 
-## Batch Jobs with `kbatch`:
+## Batch Jobs with [**`kbatch`**](kbatch.md):
 
 On a standard cluster, such as a campus supercomputer, the last step
 in a workflow may often be to submit a full, scaled-up analysis
@@ -103,7 +104,7 @@ using the `kbatch` command to submit batch jobs.
 For more details, see the [**kbatch**](kbatch.md) page!
 
 
-## Working with MSPC Data, Working with Your Data:
+## [**Bringing Your Own Data**](byo_data.md), and working with [**STAC**](stac.md):
 
 There are plenty of quick example workflows provided in the 'Example Notebook' tabs
 under each of the datasets in the MSPC Data Catalog (e.g., [GBIF](https://planetarycomputer.microsoft.com/dataset/gbif#Example-Notebook)), and they can be opened interactively, run, and messed with in the Hub by clicking the blue 'Launch in Hub' button in the page.
@@ -114,5 +115,5 @@ If those workflows mirror your workflow close enough to get you started, and if 
 want to work exclusively with data that is already in the MSPC Data Catalog,
 then you might be ready to jump in an start building an analysis!
 
-However, if you want to work with data that is not already in the MSPC Data Catalog then you'll need to do some manual interaction with Azure storage containers. Take a quick look at [this blob-storage example](https://planetarycomputer.microsoft.com/docs/quickstarts/storage/) to get a quick glimpse of how that could work, but then move on to my notes on [**using data not in the Data Catalog**](byo_data.md) for much more detail!
+However, if you want to work with data that is not already in the MSPC Data Catalog then you'll need to do some manual interaction with Azure storage containers. Take a quick look at [this blob-storage example](https://planetarycomputer.microsoft.com/docs/quickstarts/storage/) to get a very basic glimpse of how that might look. Then move on to my notes on [**creating a STAC for your own data**](stac.md) and [**using that data in MSPC**](byo_data.md) for much more detail!
 

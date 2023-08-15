@@ -59,4 +59,3 @@ Read on to start learning the ins and outs and start getting things done!
 - [**kbatch**](kbatch.md)
 - [**using data not in the Data Catalog**](byo_data.md)
 
-
