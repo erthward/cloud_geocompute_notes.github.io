@@ -1,4 +1,4 @@
-# Understanding STAC:
+# MSPC: Working with STAC:
 
 [STAC (SpatioTemporal Asset Catalog)](https://stacspec.org/en) is a specification
 for a data structure that uses simple, human-readable

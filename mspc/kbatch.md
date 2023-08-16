@@ -1,4 +1,4 @@
-# Running Batch Jobs with `kbatch`
+# MSPC: Running Batch Jobs with `kbatch`
 
 On a standard cluster, such as a campus supercomputer, the workflow for developing a parallel job could look something like this:
 

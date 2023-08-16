@@ -1,4 +1,4 @@
-# Running Parallel Jobs with Dask
+# MSPC: Running Parallel Jobs with Dask
 [Dask](https://www.dask.org) is an important part of Pangeo Cloud, and thus of the MSPC Hub.
 It is used to parallelize large calculations: i.e., to break them into small pieces,
 run them all simultaneously on a 'cluster' of networked comuter nodes, or 'workers',

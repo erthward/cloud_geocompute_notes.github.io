@@ -1,4 +1,4 @@
-# Overview:
+# MSPC: Overview:
 [MSPC](http://planetarycomputer.microsoft.com/) is a free-to-use geocomputing environment created and provided by Microsoft.
 It offers:
 1. a [Data Catalog](http://planetarycomputer.microsoft.com/docs/overview/about) with a lot of commonly used datasets ready to go (and worked examples to use as a quick-start);

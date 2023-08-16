@@ -1,4 +1,4 @@
-# The MSPC Hub:
+# MSPC: The Hub:
 
 The hub is built as a **PanGeo Cloud** environment in 
 a **JupyterHub** instance. Let's take that apart, working backward:
