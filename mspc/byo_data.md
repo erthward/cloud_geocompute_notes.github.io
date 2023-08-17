@@ -93,7 +93,7 @@ az storage account create \
     --resource-group <RES_GRP_NAME> \  # same name from above!
     --location westeurope \            # for MSPC, always westeurope! 
     --sku Standard_RAGRS \             # needed, but I still don't know what it is...
-    --kind StorageV2 \                 # we want standard blob storage!
+    --kind StorageV2                   # we want standard blob storage!
 ```
 
 ## II. convert data to cloud-native formats
@@ -270,7 +270,7 @@ For my example, mentioned above, this produced a STAC with this basic structure
       - `Asset`:  band 2
       - `Asset`:  band 3
       - `Asset`:  band 4
-  - sub-`Collection` 2 (global map of 260 tiles and 4 variables (`Asset`s))
+  - sub-`Collection` 2 (global map of 260 tiles and 2 variables (`Asset`s))
     - `Item`: tile 1
       - `Asset`:  var 1
       - `Asset`:  var 2
@@ -595,7 +595,7 @@ scripting this would be ideal.
 Luckily, this is pretty easy to do!
 
 
-### 9. [OPTIONAL] Upgrade paid Azure account
+### 9. [OPTIONAL] Upgrade to a paid Azure account
 
 If your experience goes the same as mine,
 the Azure account you created above (or before)

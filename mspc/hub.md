@@ -18,7 +18,7 @@ and thus are very worth taking the time to learn well.
 I recommend starting with their 
 
 The [**PanGeo Cloud**](https://pangeo.io/cloud.html) is a cloud-basd data-science environment
-in which each user has a private, virtual environment (analogous to a user space on a bare-metal server like a campus supercomputer), called `/home/joyvan`, which is intended only for code, notes, small data, etc. (10 GB limit).
+in which each user has a private, virtual environment (analogous to a user space on a bare-metal server like a campus supercomputer), called `/home/jovyan`, which is intended only for code, notes, small data, etc. (10 GB limit).
 The compute environment is accessed through the browser, so you just log in there,
 and you can up/download smaller objects/files directly to the home directory
 (though you should defer to using [Git](https://git-scm.com/)/[GitHub](https://github.com/) as much as possible).
@@ -72,6 +72,10 @@ If you want to work with code that is version-controlled on GitHub (highly recom
 4. Type `git clone ` into the terminal, then use <Ctrl>-V to paste the GitHub repo's URL into the command line, then hit <Enter>. (Note: If you are attempting to clone a private GitHub repo to which you have access, you will be prompted to authenticate. Enter your username, press <Enter>, then enter your password (type carefully; for security purposes, no characters appear when passwords are typed into the command line), and press <Enter> again.) ![image](jupyterhub_git_clone.png)
 
 5. Once the command has finished running successfully (you will be returned to a new command line that is awaiting further input), you can click the terminal tab's 'x' to close it (a new Launcher tab will reappear in its place again), navigate into the newly cloned directory using the bookmarks tab at the left, and double-click on any Jupyter Noteook files (.ipynb extensions) or other files you wish to edit to begin working with them on the Hub. ![image](jupyterhub_repo_nb.png)
+
+
+
+# TODO: ADD INSTRUCTIONS FOR COMMITTING AND PUSHING CHANGES BACK TO GITHUB
 
 
 # Next steps:
